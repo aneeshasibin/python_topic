@@ -1,0 +1,43 @@
+def sum(a,b):
+    result=a+b
+    print(result)
+sum(2,4)
+
+# Default Arguments
+def sum(a=1,b=2):
+    result=a+b
+    print(result)
+sum(3)
+
+# keyword arguments
+def sum(a,b):
+    result=a+b
+    print(result)
+sum(a=2,b=4)
+
+# required arguments
+def sum(b,a=9):
+    result=a+b
+    print(result)
+sum(b=2)
+
+# variable length arguments
+# Arbitary arguments
+def avg(*marks):
+    sum=0
+    for i in marks:
+        sum+=i
+    avg=sum/len(marks)
+    print(avg)
+avg(98,79,80,60,88,90)
+
+# keyword arbitary arguments
+def fun(**name):
+    print('i am',name['fname'],"i am",name['age'],"i am from",name['place'])
+fun(fname='Aneesha Sibin',age=24,place='Thrissur')
+
+# return statement
+def mul(a,b):
+    result=a*b
+    return result
+print(mul(4,8))
