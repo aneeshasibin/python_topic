@@ -1,0 +1,87 @@
+# Dictionaries are ordered collection of data items. They store multiple items in a single variable.
+# Dictionary items are key-value pairs that seperated by comma & enclosed within curly brackets.
+# It is changeable.
+
+info={'name':'Anu','age':24,'eligible':'True'}
+print(info)
+
+print('*'*200)
+
+# Accessing dictionary items
+print(info['name'])
+print(info.get('age'))
+print(info.get('place','something went wrong'))
+
+print('*'*200)
+
+# Accesing multiple values
+print(info.values())
+
+for i in info.values():
+    print(i)
+
+for i in info:
+    print(info[i])
+
+print('*'*200)
+
+# accessing multiple keys
+print(info.keys())
+
+for i in info:
+    print(i)
+
+for i in info.keys():
+    print(i)
+
+print('*'*200)
+
+# accesing multiple key-value pairs
+print(info.items())
+
+for i in info.items():
+    print(i)
+
+print('*'*200)
+
+# Dictionary methods
+info.update({'age':23})
+x={'place':'Thrissur','prof':'bigdata'}
+info.update(x)
+print(info)
+
+print('*'*200)
+
+dict1={}
+print(dict1)
+
+print('*'*200)
+
+print(len(info))
+
+print('*'*200)
+
+dict2=info.copy()
+print("copy info to dict2",dict2)
+
+print('*'*200)
+
+newdict=dict(dict2)
+print(newdict)
+
+print('*'*200)
+
+info.pop('age')
+info.popitem()
+print(info)
+
+print('*'*200)
+
+info.clear()
+print(info)
+
+print('*'*200)
+
+del info
+
+
