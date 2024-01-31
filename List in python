@@ -1,0 +1,25 @@
+lst=[2,4,6,7,8,9]
+print(lst[-4])
+print(lst[3])
+
+print(4 in lst)
+
+print(lst[3:6])
+print(lst[-5:-2])
+
+even=[i for i in range(1,11) if i%2==0]
+print(even)
+
+lst.sort(reverse=True)
+print(lst)
+
+lst.append(10)
+lst.insert(3,'apple')
+print(lst.index('apple'))
+
+lst1=lst.copy()
+print(lst1)
+lst.extend(even)
+print(len(lst))
+print(lst.count(2))
+print(lst)
