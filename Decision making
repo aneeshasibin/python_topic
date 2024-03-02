@@ -1,0 +1,42 @@
+
+# if
+num=10
+if num>=10:
+    print(10)
+
+
+# if else
+age=int(input('Enter the age:'))
+if age>=18:
+    print('you can vote')
+else:
+    print('you cannot vote')
+
+# if elif else
+num=int(input('Enter the number:'))
+if num>0:
+    print('given number is positive numbers')
+elif num<0:
+    print('given number is negative numbers')
+else:
+    print('given number is zero')
+
+# nested if
+a=20
+b=10
+c=30
+if a>b and a>c:
+    if b>c:
+        print('b is second largest number')
+    else:
+        print('c is second largest number')
+elif b>a and b>c:
+    if a>c:
+        print('a is second largest number')
+    else:
+        print('c is second largest number')
+else:
+    if b>a:
+        print('b is second largest number')
+    else:
+        print('a is second largest number')
